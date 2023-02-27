@@ -1,11 +1,16 @@
 :root {
   --fonte-principal: "Raleway";
-  --branco: #ffffff --;
+  --branco: #ffffff;
   --azul-escuro: #2e7ba2;
   --cinza: #444444;
   --mostarda: #df9010;
 }
 
+/* CABEÇALHO */
+
+.cabecalho {
+  width: 100vw;
+}
 .container {
   background: var(--azul-escuro);
   font-family: "Raleway", sans-serif;
@@ -19,7 +24,7 @@
   display: flex;
   justify-content: space-around;
   gap: 3rem;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .cabecalho__item-link {
@@ -29,6 +34,52 @@
   font-size: 20px;
 }
 
-.cabecalho__logo {
+.active {
+  display: none;
+}
+
+/* .cabecalho__logo {
   margin-left: 50px;
+} */
+
+.dropdown-menu {
+  background: var(--azul-escuro);
+}
+
+.dropdown-item {
+  color: var(--branco);
+}
+
+.btn {
+  background: var(--azul-escuro);
+  border: none;
+}
+.btn:hover {
+  background: var(--azul-escuro);
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: block;
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .cabecalho__lista {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440) {
+  .container {
+    display: flex;
+  }
 }
