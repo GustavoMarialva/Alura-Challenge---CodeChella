@@ -63,7 +63,16 @@
   content: none;
 }
 
-@media (min-width: 768px) {
+/* MEDIA QUERIES */
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     display: block;
     text-align: center;
@@ -76,11 +85,5 @@
   }
   .cabecalho__lista {
     margin-top: 30px;
-  }
-}
-
-@media (min-width: 1440) {
-  .container {
-    display: flex;
   }
 }
