@@ -1,0 +1,67 @@
+:root {
+  --fonte-principal: "Raleway";
+  --branco: #ffffff --;
+  --azul-escuro: #2e7ba2;
+  --cinza: #444444;
+  --mostarda: #df9010;
+}
+
+.cabecalho {
+  background: var(--azul-escuro);
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  /* padding: 32px 24px;
+  width: 100vh;
+  height: 128px; */
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cabecalho__menu-hamburguer {
+  background-image: url("../img/menu.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.container_botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url("../img/menu.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-escuro);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__imagem {
+  padding: 1em;
+}
+
+.cabecalho_item {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+}
+
+.container_botao:checked ~ .cabecalho_item {
+  display: block;
+}
+
+.cabecalho__item-link {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.container_botao {
+  display: none;
+}
