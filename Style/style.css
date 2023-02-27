@@ -9,10 +9,11 @@
 /* CABEÇALHO */
 
 .cabecalho {
-  width: 100vw;
-}
-.container {
   background: var(--azul-escuro);
+  width: 100%;
+}
+
+.container {
   font-family: "Raleway", sans-serif;
   padding: 32px 24px;
   display: flex;
