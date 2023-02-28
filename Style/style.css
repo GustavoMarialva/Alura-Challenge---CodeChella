@@ -1,14 +1,21 @@
 @import url("../Style/banner.css");
+@import url("../Style/datas.css");
+@import url("../Style/lineup.css");
 
 :root {
   --fonte-principal: "Raleway";
+  --fonte-titulo: "Calistoga"
   --branco: #ffffff;
   --azul-escuro: #2e7ba2;
   --cinza: #444444;
   --mostarda: #df9010;
   --laranja-claro: #facf9d;
 }
+
 body {
+  font-family: "Raleway", sans-serif;
+}
+main {
   background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
 }
 
@@ -72,18 +79,8 @@ body {
   content: none;
 }
 
+
 /* MEDIA QUERIES */
-@media screen and (min-width: 1440px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -98,5 +95,16 @@ body {
   }
   .cabecalho__lista {
     margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
   }
 }
