@@ -4,21 +4,15 @@
   width: 100vw;
   background-repeat: no-repeat;
 }
-.banner__imagem-mobile {
-  width: 100vw;
-}
+
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("../img/Banner\ 768.png");
-  }
-  .banner__imagem-mobile {
-    display: none;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .banner {
-    background-image: url("../img/Banner1440.png");
-  }
+    background-size: cover;
 }
