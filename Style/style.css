@@ -5,6 +5,9 @@
   --cinza: #444444;
   --mostarda: #df9010;
 }
+body {
+  background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
+}
 
 /* CABEÇALHO */
 
