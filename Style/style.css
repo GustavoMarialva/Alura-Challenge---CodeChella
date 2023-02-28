@@ -1,9 +1,12 @@
+@import url("../Style/banner.css");
+
 :root {
   --fonte-principal: "Raleway";
   --branco: #ffffff;
   --azul-escuro: #2e7ba2;
   --cinza: #444444;
   --mostarda: #df9010;
+  --laranja-claro: #facf9d;
 }
 body {
   background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
@@ -36,6 +39,9 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
+}
+.cabecalho__item-link:hover {
+  color: var(--laranja-claro);
 }
 
 .active {
