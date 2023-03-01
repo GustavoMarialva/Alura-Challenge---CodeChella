@@ -1,5 +1,8 @@
 .foto__publico-img {
   filter: sepia(70%);
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .foto__publico-768,

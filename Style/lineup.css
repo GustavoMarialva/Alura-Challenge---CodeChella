@@ -65,11 +65,23 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .lineup__bandas {
+  /* .lineup__bandas {
     display: flex;
-    flex-direction: row;
+    flex-direction: col;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  } */
+  .lineup__secundario {
+    display: flex;
+    gap: 32px;
+  }
+  .lineup__terciarias {
+    display: flex;
+    gap: 32px;
+  }
+  .lineup__abertura {
+    display: flex;
+    gap: 32px;
   }
 }
