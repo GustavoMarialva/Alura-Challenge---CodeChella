@@ -50,10 +50,12 @@
   color: #ffffff;
   text-decoration: none;
   padding: 8px 16px;
+  gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .info__img {
+  .info__container {
+    padding: 32px 60px;
   }
 }
 
@@ -61,6 +63,7 @@
   .info__container {
     flex-direction: row;
     justify-content: space-between;
+    gap: 48px;
   }
   .info__img {
     margin-left: 32px;

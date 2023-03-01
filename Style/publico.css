@@ -1,0 +1,29 @@
+.foto__publico-img {
+  filter: sepia(70%);
+}
+
+.foto__publico-768,
+.foto__publico-1440 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .foto__publico-360,
+  .foto__publico-1440 {
+    display: none;
+  }
+
+  .foto__publico-768 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .foto__publico-360,
+  .foto__publico-768 {
+    display: none;
+  }
+
+  .foto__publico-1440 {
+    display: block;
+  }
+}

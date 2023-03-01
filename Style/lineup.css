@@ -63,3 +63,13 @@
   line-height: 38px;
   margin-bottom: 32px;
 }
+
+@media screen and (min-width: 1440px) {
+  .lineup__bandas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

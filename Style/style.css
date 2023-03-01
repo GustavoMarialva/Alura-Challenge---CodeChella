@@ -1,6 +1,8 @@
 @import url("../Style/banner.css");
 @import url("../Style/datas.css");
 @import url("../Style/lineup.css");
+@import url("../Style/publico.css");
+@import url("../Style/rodape.css");
 
 :root {
   --fonte-principal: "Raleway", sans-serif;
