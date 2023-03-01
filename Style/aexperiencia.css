@@ -1,0 +1,36 @@
+@import url("/Style/cabecalho.css");
+@import url("/Style/rodape.css");
+@import url("/Style/style.css");
+
+.banner__imagem-real {
+  opacity: 100%;
+}
+
+.banner__imagem-real768 {
+  display: none;
+}
+
+.banner__imagem-real1440 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__imagem-real360 {
+    display: none;
+  }
+  .banner__imagem-real768 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner__imagem-real360 {
+    display: none;
+  }
+  .banner__imagem-real1440 {
+    display: block;
+  }
+  .banner__imagem-real768 {
+    display: none;
+  }
+}
