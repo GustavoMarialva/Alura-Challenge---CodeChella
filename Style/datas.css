@@ -54,7 +54,6 @@
 
 @media screen and (min-width: 768px) {
   .info__img {
-    background-size: cover;
   }
 }
 
@@ -64,8 +63,6 @@
     justify-content: space-between;
   }
   .info__img {
-    width: 609px;
-    height: 381px;
     margin-left: 32px;
   }
   .info__card {

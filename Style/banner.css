@@ -1,18 +1,77 @@
-.banner {
+/* .banner {
   /* background-image: url("../img/Banner.png"); */
-  /* height: 100vh; */
-  width: 100vw;
-  background-repeat: no-repeat;
+/* height: 100vh; */
+
+/* background-repeat: no-repeat;
+  background-size: cover;
+
+} */
+
+.banner {
+  position: relative;
+  max-width: 100vw;
+}
+.banner__imagem-real {
+  max-width: 100vw;
+  height: auto;
+  opacity: 50%;
 }
 
+.banner__titulo {
+  font-family: "Calistoga", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cinza);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 22%;
+}
+.banner__subtitulo {
+  font-family: "Calistoga", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cinza);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 15%;
+}
 
 @media screen and (min-width: 768px) {
-  .banner {
-    background-size: cover;
+  .banner__imagem-real {
+    height: 350px;
+    width: 100vw;
+  }
+  .banner__subtitulo {
+    left: 18%;
+  }
+  .banner__titulo {
+    left: 25%;
+  }
+  .banner__titulo,
+  .banner__subtitulo {
+    font-size: 64px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .banner {
-    background-size: cover;
+  .banner__imagem-real {
+    height: 350px;
+    width: 100vw;
+  }
+  .banner__subtitulo {
+    left: 32%;
+  }
+  .banner__titulo {
+    left: 35%;
+    top: 30%;
+  }
+
+  .banner__titulo,
+  .banner__subtitulo {
+    font-size: 64px;
+  }
 }

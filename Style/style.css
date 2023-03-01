@@ -3,8 +3,8 @@
 @import url("../Style/lineup.css");
 
 :root {
-  --fonte-principal: "Raleway";
-  --fonte-titulo: "Calistoga"
+  --fonte-principal: "Raleway", sans-serif;
+  --fonte-titulo: "Calistoga", sans-serif;
   --branco: #ffffff;
   --azul-escuro: #2e7ba2;
   --cinza: #444444;
@@ -14,8 +14,6 @@
 
 body {
   font-family: "Raleway", sans-serif;
-}
-main {
   background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
 }
 
@@ -78,7 +76,6 @@ main {
 .dropdown-toggle::after {
   content: none;
 }
-
 
 /* MEDIA QUERIES */
 
