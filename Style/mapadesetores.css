@@ -1,0 +1,77 @@
+@import url("/Style/cabecalho.css");
+@import url("/Style/rodape.css");
+@import url("/Style/style.css");
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--cinza);
+}
+
+.banner__setores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 281px;
+  z-index: 0;
+}
+.banner__setores::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-image: url("../img/MapadeSetores/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.mapasetores__legenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mapasetores__legenda-locais {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.mapasetores__legenda-locais-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.mapadesetores__titulo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detalhes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  gap: 32px;
+}
+
+.detalhes__titulo {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.detalhes__conteudo {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}

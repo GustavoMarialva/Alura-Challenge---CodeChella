@@ -4,6 +4,7 @@
 @import url("../Style/publico.css");
 @import url("../Style/rodape.css");
 @import url("../Style/cabecalho.css");
+@import url("../Style/mapadesetores.css");
 
 :root {
   --fonte-principal: "Raleway", sans-serif;
