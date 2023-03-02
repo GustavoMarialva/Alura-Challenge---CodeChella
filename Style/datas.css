@@ -69,6 +69,8 @@
     margin-left: 32px;
   }
   .info__card {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 0 32px 0 32px;
   }

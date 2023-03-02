@@ -27,6 +27,9 @@ body {
   align-items: center;
   gap: 32px;
 }
+.main__img768 {
+  display: none;
+}
 
 .main__texto {
   display: flex;
@@ -53,6 +56,17 @@ body {
   .banner__imagem-real768 {
     display: block;
   }
+  .main__container {
+    padding: 32px 60px 32px 60px;
+  }
+
+  .main__img360 {
+    display: none;
+  }
+
+  .main__img768 {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -64,5 +78,24 @@ body {
   }
   .banner__imagem-real768 {
     display: none;
+  }
+
+  .main__container {
+    flex-direction: row;
+    padding: 64px 120px 64px 120px;
+  }
+
+  .main__container-direito {
+    flex-direction: row-reverse;
+  }
+
+  .main__titulo-esquerdo,
+  .main__conteudo-esquerdo {
+    text-align: left;
+  }
+
+  .main__titulo-direito,
+  .main__conteudo-direito {
+    text-align: right;
   }
 }
