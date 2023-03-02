@@ -28,6 +28,12 @@ body {
   z-index: -1;
 }
 
+.mapasetores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mapasetores__legenda {
   display: flex;
   flex-direction: column;
@@ -74,4 +80,55 @@ body {
   font-weight: 500;
   line-height: 40px;
   text-align: center;
+}
+
+.detalhes__img768 {
+  display: none;
+}
+
+.mapasetores1440 {
+  display: none;
+}
+
+.detalhes__titulo-principal {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .detalhes__titulo {
+    font-size: 40px;
+  }
+
+  .detalhes__img360 {
+    display: none;
+  }
+  .detalhes__img768 {
+    display: block;
+  }
+
+
+@media screen and (min-width: 1440px) {
+  .mapasetores {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .mapasetores360 {
+    display: none;
+  }
+
+  .mapasetores1440 {
+    display: block;
+  }
+
+  .detalhes__1440 {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  
 }
