@@ -6,18 +6,34 @@ body {
   font-family: "Raleway", sans-serif;
   color: var(--cinza);
 }
-
-.banner__imagem-real {
-  opacity: 100%;
-  width: 100vw;
+.bannerexperiencia {
+  position: relative;
+  display: flex;
+  height: 270px;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner__imagem-real768 {
-  display: none;
+.bannerexperiencia__img {
+  background: url("../img/AExperiencia/bannerExperienciaReal.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
-
-.banner__imagem-real1440 {
-  display: none;
+.bannerexperiencia_titulo {
+  font-family: "Calistoga", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cinza);
+  text-align: center;
+  width: 90%;
+  line-height: 40px;
 }
 
 .main__container {
@@ -55,12 +71,6 @@ body {
   line-height: 40px;
 }
 @media screen and (min-width: 768px) {
-  .banner__imagem-real360 {
-    display: none;
-  }
-  .banner__imagem-real768 {
-    display: block;
-  }
   .main__container {
     padding: 32px 60px 32px 60px;
   }
@@ -75,19 +85,11 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .banner__imagem-real360 {
-    display: none;
-  }
-  .banner__imagem-real1440 {
-    display: block;
-  }
-  .banner__imagem-real768 {
-    display: none;
-  }
-
   .main__container {
     flex-direction: row;
-    padding: 64px 120px 64px 120px;
+    align-items: center;
+
+    padding: 64px 80px 64px 80px;
   }
 
   .main__container-direito {
@@ -102,5 +104,10 @@ body {
   .main__titulo-direito,
   .main__conteudo-direito {
     text-align: right;
+  }
+
+  .bannerexperiencia_titulo {
+    font-size: 64px;
+    font-weight: 400;
   }
 }
