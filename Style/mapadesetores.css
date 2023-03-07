@@ -108,7 +108,7 @@ body {
   }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .mapasetores {
     flex-direction: row;
     align-items: center;

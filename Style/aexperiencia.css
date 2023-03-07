@@ -9,6 +9,7 @@ body {
 
 .banner__imagem-real {
   opacity: 100%;
+  width: 100vw;
 }
 
 .banner__imagem-real768 {
@@ -73,7 +74,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .banner__imagem-real360 {
     display: none;
   }

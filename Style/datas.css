@@ -39,7 +39,8 @@
 
 .btn__ingresso {
   background: var(--azul-escuro);
-  box-shadow: 4px 4px 0px #444444;
+  box-shadow: 0px 2px 4px 0px #444444;
+  border: none;
   border-radius: 16px;
   display: flex;
   justify-content: space-around;
@@ -51,23 +52,38 @@
   text-decoration: none;
   padding: 8px 16px;
   gap: 32px;
+  cursor: pointer;
+}
+
+.btn__ingresso-link:hover {
+  color: #ffffff;
+}
+
+.info__img1280 {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .info__container {
     padding: 32px 60px;
   }
+
+  .info__img {
+    display: none;
+  }
+
+  .info__img1280 {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .info__container {
     flex-direction: row;
     justify-content: space-between;
     gap: 48px;
   }
-  .info__img {
-    margin-left: 32px;
-  }
+
   .info__card {
     display: flex;
     flex-direction: column;
