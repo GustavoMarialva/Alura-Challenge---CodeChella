@@ -1,0 +1,54 @@
+.banner__img-garantaseuingresso {
+  background: url("../img/garantaingresso.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 48px;
+}
+
+.formulario__titulo {
+  font-family: "Calistoga", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cinza);
+  text-align: center;
+}
+
+input,
+select {
+  height: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.formulario__label {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cinza);
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 648px;
+  }
+}
