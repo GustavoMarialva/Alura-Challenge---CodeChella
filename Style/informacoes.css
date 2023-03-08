@@ -20,3 +20,78 @@
   width: 100%;
   z-index: -1;
 }
+.perguntas-frequentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 24px;
+}
+
+.perguntas__titulo {
+  font-family: "Calistoga", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--cinza);
+}
+
+.fa-caret-down {
+  display: none;
+}
+
+.fa-caret-up {
+  display: none;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  width: 312px;
+  height: 146px;
+  background-color: var(--azul-escuro);
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.pergunta__card__resposta {
+  background-color: #c8deef;
+  align-items: center;
+  width: 312px;
+  height: auto;
+  padding: 16px;
+}
+
+.p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--cinza);
+}
+.resposta__link {
+  text-decoration: underline;
+  color: var(--cinza);
+}
+
+@media screen and (min-width: 768px) {
+  .pergunta__card__titulo,
+  .pergunta__card__resposta {
+    width: 648px;
+  }
+
+  /* .pergunta__card__resposta {
+    height: auto;
+  } */
+}
+
+@media screen and (min-width: 1280px) {
+  .pergunta__card__titulo,
+  .pergunta__card__resposta {
+    width: 996px;
+  }
+} ;
