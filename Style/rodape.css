@@ -36,6 +36,8 @@
   .rodape {
     flex-direction: row;
     justify-content: space-between;
+    padding: 24px 120px;
+    gap: 32px;
   }
 
   .rodape__container {

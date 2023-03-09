@@ -71,6 +71,11 @@
   font-weight: 500;
   line-height: 40px;
 }
+.ingresso__texto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .ingresso__container1280 {
   display: flex;
   flex-direction: column;
@@ -92,12 +97,17 @@
   .ingresso__container {
     width: 792px;
     height: 350px;
+    align-items: flex-start;
   }
 
   .ingresso__container1280 {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 48px;
+  }
+
+  .ingresso__texto-container {
+    align-items: flex-start;
   }
 }
