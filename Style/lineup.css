@@ -69,8 +69,8 @@
     position: relative;
   }
 
-  h6::before,
-  h6::after {
+  .lineup__data::before,
+  .lineup__data::after {
     content: "";
     position: absolute;
     width: 120px;
@@ -81,7 +81,7 @@
     transform: translate(-50%);
   }
 
-  h6:after {
+  .lineup__data:after {
     left: unset;
     right: -220px;
   }
@@ -108,12 +108,12 @@
     gap: 32px;
   }
 
-  h6 {
+  .lineup__data {
     position: relative;
   }
 
-  h6::before,
-  h6::after {
+  .lineup__data::before,
+  .lineup__data::after {
     content: "";
     position: absolute;
     width: 190px;
@@ -124,7 +124,7 @@
     transform: translate(-50%);
   }
 
-  h6:after {
+  .lineup__data:after {
     left: unset;
     right: -400px;
   }
