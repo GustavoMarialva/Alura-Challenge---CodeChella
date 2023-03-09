@@ -21,6 +21,9 @@
   display: flex;
   gap: 8px;
 }
+.rodape__desenvolvido {
+  text-align: center;
+}
 
 /* @media screen and (min-width: 768px) {
   .rodape {

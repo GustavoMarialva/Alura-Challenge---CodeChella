@@ -64,6 +64,29 @@
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  h6 {
+    position: relative;
+  }
+
+  h6::before,
+  h6::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--mostarda);
+    left: -100px;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  h6:after {
+    left: unset;
+    right: -220px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   /* .lineup__bandas {
     display: flex;
@@ -83,5 +106,26 @@
   .lineup__abertura {
     display: flex;
     gap: 32px;
+  }
+
+  h6 {
+    position: relative;
+  }
+
+  h6::before,
+  h6::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 2px;
+    background-color: var(--mostarda);
+    left: -200px;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  h6:after {
+    left: unset;
+    right: -400px;
   }
 }
