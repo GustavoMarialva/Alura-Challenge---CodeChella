@@ -1,0 +1,71 @@
+@import url("../Style/style.css");
+
+.banner__ingresso {
+  position: relative;
+  display: flex;
+  height: 270px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__img-ingresso {
+  background: url("../img/ingressocomprado.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.ingresso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+}
+
+.ingresso__titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cinza);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.ingresso__container {
+  background: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 312px;
+  height: auto;
+  padding: 32px;
+  gap: 32px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ingresso__container-logo {
+  display: flex;
+  justify-content: space-around;
+  gap: 92px;
+}
+
+.ingresso__logo {
+  width: 116px;
+  height: 32px;
+}
+
+.ingresso__qrcode {
+  width: 230px;
+  height: 190px;
+}
+
+.ingresso__texto {
+  font-weight: 500;
+}

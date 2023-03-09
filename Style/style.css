@@ -7,6 +7,7 @@
 @import url("../Style/mapadesetores.css");
 @import url("../Style/informacoes.css");
 @import url("../Style/formulario.css");
+@import url("../Style/ingresso.css");
 
 :root {
   --fonte-principal: "Raleway", sans-serif;
