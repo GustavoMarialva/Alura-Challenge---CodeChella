@@ -52,7 +52,7 @@
 
 .ingresso__container-logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 92px;
 }
 
@@ -75,4 +75,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .ingresso__container {
+    width: 648px;
+    height: 648px;
+  }
+
+  .ingresso__container-logo {
+    gap: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ingresso__container {
+    width: 792px;
+    height: 350px;
+  }
+
+  .ingresso__container1280 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
 }
