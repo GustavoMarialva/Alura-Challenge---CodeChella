@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,59 +11,157 @@
     <title>Accordion com JavaScript puro</title>
   </head>
   <body>
-    <div class="accordion" data-js="accordion">
+    <!-- <div class="accordion" data-js="accordion">
+      <h3 class="perguntas__titulo">Perguntas Frequentes:</h3>
       <div class="accordion-item">
         <button
           class="accordion-header"
           data-accordion-header="1"
           data-js="accordion-header"
         >
-          <strong data-accordion-header="1"
-            >Qual é o conteúdo do treinamento?</strong
+          <strong data-accordion-header="1" class="accordion-question"
+            >Quais serão as atrações</strong
           >
           <i data-accordion-header="1" class="fas fa-angle-down"></i>
         </button>
 
         <div data-accordion-body="1" class="accordion-body">
-          O treinamento foi desenhado para levar você do zero até a fluência em
-          JavaScript - isto é, construir aplicações web (front-end) com
-          JavaScript puro, através de 21 etapas. Você pode ver todas elas
-          <a
-            href="https://drive.google.com/file/d/13RaAC8qjibWEx5wBhaXsSzPuyY0yeZvA/view?usp=sharing"
-            target="_blank"
-            >aqui</a
-          >.
+          <p class="accordion-text">
+            Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e
+            o segundo (12/03) com bandas pop.
+            <a href="index.html" class="resposta__link"
+              >Confira o line-up em detalhes clicando neste link</a
+            >!
+          </p>
         </div>
       </div>
 
       <div class="accordion-item">
         <button data-accordion-header="2" class="accordion-header">
-          <strong data-accordion-header="2"
-            >Quais são os requisitos técnicos para entrar?</strong
+          <strong data-accordion-header="2" class="accordion-question"
+            >Qual é a classificação etária?</strong
           >
           <i data-accordion-header="2" class="fas fa-angle-down"></i>
         </button>
 
         <div data-accordion-body="2" class="accordion-body">
-          Para entrar no CJRM, você precisa saber apenas o básico de HTML e CSS.
+          <p class="accordion-text">
+            A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem
+            que estar acompanhado dos pais ou responsáveis legais. Menores de 10
+            anos não podem entrar.
+          </p>
         </div>
       </div>
 
       <div class="accordion-item">
         <button data-accordion-header="3" class="accordion-header">
-          <strong data-accordion-header="3"
-            >Tenho uma dúvida, como posso falar com você?</strong
+          <strong data-accordion-header="3" class="accordion-question"
+            >Quais são os setores disponíveis?</strong
           >
           <i data-accordion-header="3" class="fas fa-angle-down"></i>
         </button>
 
         <div data-accordion-body="3" class="accordion-body">
-          Se você assistiu o vídeo acima e ainda está com alguma dúvida, envie
-          um e-mail para oi@rogermelo.com.br e eu irei atender você.
+          <p class="accordion-text">
+            Pista Comum <br />
+            Cadeiras térreo <br />
+            Cadeiras superiores <br />
+            Rampas
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <button data-accordion-header="4" class="accordion-header">
+            <strong data-accordion-header="4" class="accordion-question"
+              >Quais são os itens proibidos?</strong
+            >
+            <i data-accordion-header="4" class="fas fa-angle-down"></i>
+          </button>
+
+          <div data-accordion-body="4" class="accordion-body">
+            <p class="accordion-text">
+              Garrafas, latas, bebidas, utensílios de armazenagem, embalagens
+              rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e
+              armas brancas, objetos pontiagudos, cortantes e/ou perfurantes,
+              correntes e cinturões, fogos de artifício, objetos de vidro,
+              substâncias inflamáveis, cigarro eletrônico, corrosivas e ou
+              tóxicas, revistas, jornais, livros e copo térmico ou similares.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button data-accordion-header="5" class="accordion-header">
+            <strong data-accordion-header="5" class="accordion-question"
+              >Quem tem direito a meia-entrada?</strong
+            >
+            <i data-accordion-header="5" class="fas fa-angle-down"></i>
+          </button>
+
+          <div data-accordion-body="5" class="accordion-body">
+            <p class="accordion-text">
+              De acordo com a Lei Federal, têm direito ao benefício da
+              meia-entrada aqueles que preencherem os requisitos e apresentarem
+              os documentos comprobatórios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <strong>Quais serão as atrações?</strong
+          ><i class="fas fa-angle-down"></i>
+        </button>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e
+            o segundo (12/03) com bandas pop.
+            <a href="index.html" class="resposta__link"
+              >Confira o line-up em detalhes clicando neste link</a
+            >!
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <strong>Qual é a classificação etária?</strong
+          ><i class="fas fa-angle-down"></i>
+        </button>
+        <div class="accordion-body">
+          Dignissimos perspiciatis amet, qui soluta aliquid, ipsa ea alias
+          quidem officiis vel, inventore quod labore aspernatur exercitationem
+          fugit explicabo rerum dolores quo unde assumenda reprehenderit vero
+          temporibus? Magni, nesciunt vero?
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <strong>Accordion 3</strong><i class="fas fa-angle-down"></i>
+        </button>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            Amet fuga ipsum velit, quae illo doloremque? Id quidem harum placeat
+            porro ipsam, animi voluptatem vel mollitia, quae rerum suscipit modi
+            at consequatur ipsum vitae cum aspernatur itaque non quam?
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <strong>Accordion 4</strong><i class="fas fa-angle-down"></i>
+        </button>
+        <div class="accordion-body">
+          Nihil consectetur ipsum nobis eligendi facilis sed corrupti, ab fugit
+          ducimus dolorem rem nulla excepturi impedit sint ea, eveniet provident
+          quos repudiandae a quas reiciendis aut, incidunt corporis? Laboriosam,
+          labore.
         </div>
       </div>
     </div>
-
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

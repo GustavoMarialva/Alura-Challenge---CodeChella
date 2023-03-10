@@ -43,6 +43,10 @@
   display: none;
 }
 
+.hidden {
+  display:none
+}
+
 .accordion {
   display: flex;
   align-items: center;
@@ -78,15 +82,16 @@
   color: var(--cinza);
 }
 
+
 @media screen and (min-width: 768px) {
   .pergunta__card__titulo,
   .pergunta__card__resposta {
     width: 648px;
   }
 
-  /* .pergunta__card__resposta {
+  .pergunta__card__resposta {
     height: auto;
-  } */
+  
 }
 
 @media screen and (min-width: 1280px) {
