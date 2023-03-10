@@ -83,21 +83,26 @@
       </nav>
     </header>
     <div class="banner">
-      <div class="banner__img-garantaseuingresso" aria-label="Imagem de um brinquedo de parque de diversão"></div>
-        <!-- <img src="./img/bannerReal.jpg" alt="" class="banner__imagem-real" /> -->
-        <div class="titulo__container">
-             <h1 class="banner__titulo">Garanta seu Ingresso</h1>
-        </div>
+      <div
+        class="banner__img-garantaseuingresso"
+        aria-label="Imagem de um brinquedo de parque de diversão"
+      ></div>
+      <!-- <img src="./img/bannerReal.jpg" alt="" class="banner__imagem-real" /> -->
+      <div class="titulo__container">
+        <h1 class="banner__titulo">Garanta seu Ingresso</h1>
+      </div>
     </div>
 
     <section class="formulario">
       <h3 class="formulario__titulo">Preencha o formulário a seguir:</h3>
       <form action="">
         <label for="name" class="formulario__label">Nome Completo:</label>
-        <input type="text" required>
+        <input type="text" required />
         <label for="email" class="formulario__label">Email:</label>
-        <input type="email" required>
-        <label for="ingresso" class="formulario__label">Tipo de Ingresso:</label>
+        <input type="email" required />
+        <label for="ingresso" class="formulario__label"
+          >Tipo de Ingresso:</label
+        >
         <select name="ingresso" id="ingresso">
           <option value="">Tipo de ingresso</option>
           <option value="">Pista Premium</option>
@@ -107,7 +112,7 @@
           <option value="">Rampas</option>
         </select>
         <label for="data" class="formulario__label">Data de nascimento:</label>
-        <input type="date" required>
+        <input type="date" required />
       </form>
       <button class="btn__ingresso">
         <a href="#" class="btn__ingresso-link">Avançar!</a>
@@ -116,17 +121,40 @@
     </section>
 
     <footer class="rodape">
-      <div class="rodape__container"> <img src="./img/Logo1 2.png" alt="logo" class="rodape__logo" />
-      <p class="rodape__texto">Acesse nossas redes:
-        <ul class="rodape__links">
-          <li><a href=""><img src="./img/Ícones redes socias-16.svg" alt=""></a></li>
-          <li><a href=""><img src="./img/Ícones redes socias-17.svg" alt=""></a></li>
-          <li><a href=""><img src="./img/Ícones redes socias-18.svg" alt=""></a></li>
-          <li><a href=""><img src="./img/Ícones redes socias-19.svg" alt=""></a></li>
-        </ul>
-      </p></div>
-     
-      <p class="rodape__desenvolvido">Desenvolvido por Alura. <br> Projeto fictício sem fins comercial</p>
+      <div class="rodape__redes">
+        <div class="rodape__redes-container">
+          <img src="./img/Logo1 2.png" alt="logo" class="rodape__logo" />
+          <div class="redes-sociais">
+            <p class="rodape__texto">Acesse nossas redes:</p>
+            <ul class="rodape__links">
+              <li>
+                <a href=""
+                  ><img src="./img/Ícones redes socias-16.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./img/Ícones redes socias-17.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./img/Ícones redes socias-18.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./img/Ícones redes socias-19.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <p class="rodape__desenvolvido">Desenvolvido por Alura. Projeto fictício sem fins comercial</p> -->
+      </div>
+      <p class="rodape__desenvolvido">
+        Desenvolvido por Alura.<br />Projeto fictício sem fins comercial
+      </p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
