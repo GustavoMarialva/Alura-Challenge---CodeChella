@@ -14,21 +14,6 @@ perguntas.forEach((element) => {
   });
 });
 
-// const accordion = document.querySelector('[data-js="accordion"]');
-
-// accordion.addEventListener("click", (e) => {
-//   const accordionHeaderId = e.target.dataset.accordionHeader;
-//   const clickedAccordionHeader = document.querySelector(
-//     `[data-accordion-header = "${accordionHeaderId}"]`
-//   );
-//   const accordionItemToBeOpened = document.querySelector(
-//     `[data-accordion-body = "${accordionHeaderId}"]`
-//   );
-
-//   clickedAccordionHeader.classList.toggle("active");
-//   accordionItemToBeOpened.classList.toggle("active");
-// });
-
 const acc_btns = document.querySelectorAll(".accordion-header");
 const acc_contents = document.querySelectorAll(".accordion-body");
 
@@ -56,3 +41,95 @@ window.onclick = (e) => {
     acc_contents.forEach((acc) => acc.classList.remove("active"));
   }
 };
+
+// validações formulário
+
+const form = document.querySelector("[data-formulario]");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const pessoa = {};
+  const caixaSelecao = document.querySelectorAll("select");
+
+  pessoa.nome = document.getElementById("nome").value;
+  caixaSelecao.forEach((element) => {
+    if (element.id == "setor") {
+      pessoa.setor = selecionarIngressoSetor(element.id);
+    } else if (element.id == "ingresso") {
+      pessoa.zona = selecionarIngressoSetor(element.id);
+    } else if (element.id == "data") {
+      pessoa.data = selecionarIngressoSetor(element.id);
+    }
+  });
+
+  pessoa.email = document.getElementById("email").value;
+  pessoa.cpf = document.getElementById("cpf").value;
+  pessoa.aniversario = document.getElementById("aniversario").value;
+
+  localStorage.setItem("comprador", JSON.stringify(pessoa));
+
+  window.location.href = "../ingresso.html";
+});
+
+function selecionarIngressoSetor(id) {
+  const lista = document.querySelector(`#${id}`).querySelectorAll("option");
+  let opcaoSelecionada = "";
+
+  lista.forEach((element) => {
+    if (element.selected) {
+      opcaoSelecionada = element.textContent;
+    }
+  });
+}
+
+// const camposDoFormulario = document.querySelectorAll("[required]");
+// const formulario = document.querySelector("[data-formulario]");
+
+// formulario.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//     const nome_ok: e.target.elements["nome"].value
+//     const email_ok: e.target.elements["email"].value
+//     const aniversario_ok: e.target.elements["data"].value
+
+//   localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+// });
+
+// camposDoFormulario.forEach((campo) => {
+//   campo.addEventListener("blur", () => verificaCampo(campo));
+//   campo.addEventListener("invalid", (evento) => evento.preventDefault());
+// });
+
+// const tiposDeErro = [
+//   "valueMissing",
+//   "typeMismatch",
+//   "patternMismatch",
+//   "tooShort",
+//   "customError",
+// ];
+
+// const mensagens = {
+//   nome: {
+//     valueMissing: "O campo de nome não pode estar vazio.",
+//     patternMismatch: "Por favor, preencha um nome válido.",
+//     tooShort: "Por favor, preencha um nome válido.",
+//   },
+//   email: {
+//     valueMissing: "O campo de e-mail não pode estar vazio.",
+//     typeMismatch: "Por favor, preencha um email válido.",
+//     tooShort: "Por favor, preencha um e-mail válido.",
+//   },
+//   aniversario: {
+//     valueMissing: "O campo de data de nascimento não pode estar vazio.",
+//     customError: "Você deve ser maior que 18 anos para se cadastrar.",
+//   },
+// };
+
+// function verificaCampo(campo) {
+//   let mensagem = "";
+//   campo.setCustomValidity("");
+//   if (campo.name == "aniversario" && campo.value != "") {
+//     ehMaiorDeIdade(campo);
+//   }
+// }
