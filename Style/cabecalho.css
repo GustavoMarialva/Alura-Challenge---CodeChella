@@ -32,7 +32,9 @@
 }
 
 .active {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* .cabecalho__logo {
@@ -63,27 +65,39 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */
   .active {
     display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-direction: flex;
   }
   .cabecalho__lista {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   .cabecalho {
     display: flex;
     justify-content: space-between;
+  }
+  .cabecalho__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
