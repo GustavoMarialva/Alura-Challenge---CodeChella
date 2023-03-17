@@ -1,3 +1,5 @@
+import ehUmCPF from "./js/valida-cpf.js";
+
 const perguntas = document.querySelectorAll(".pergunta__card__titulo");
 
 perguntas.forEach((element) => {
@@ -44,14 +46,18 @@ window.onclick = (e) => {
 
 // validações formulário
 
-const camposDoFormulario = document.querySelector("[required]");
+const camposDoFormulario = document.querySelectorAll("[required]");
 
 // Cria evento para quando tirar o foco do input e será o gatilho para ativar o verificaCampo
 camposDoFormulario.forEach((campo) => {
   campo.addEventListener("blur", () => verificaCampo(campo));
 });
 
-function verificaCampo(campo) {}
+function verificaCampo(campo) {
+  if (campo.name == "cpf" && campo.value.length <= 11) {
+    ehUmCPF(campo);
+  }
+}
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
 
