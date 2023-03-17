@@ -26,6 +26,10 @@
   color: var(--cinza);
   text-align: center;
 }
+.btn__ingresso {
+  width: 164px;
+  align-self: center;
+}
 
 input,
 select {
