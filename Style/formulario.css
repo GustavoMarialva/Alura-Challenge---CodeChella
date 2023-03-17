@@ -27,14 +27,14 @@
   text-align: center;
 }
 .btn__ingresso {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   width: 164px;
   height: 56px;
-  background-image: url(../img/setadireita.svg);
+  /* background-image: url(../img/setadireita.svg);
   background-repeat: no-repeat;
-  background-position: 90%;
+  background-position: 90%; */
   align-self: center;
   color: #ffffff;
   padding: 8px 16px;
