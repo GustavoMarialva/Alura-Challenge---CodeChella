@@ -20,9 +20,9 @@ function validaIdade(data) {
   );
 
   if (dataAtual >= dataMais16) {
-    return dataAtual >= dataMais16;
-  } else if (dataAtual <= dataMais13) {
-    return dataAtual <= dataMais13;
+    return true;
+  } else if (dataAtual >= dataMais13) {
+    return true;
   } else {
     return "Não pode ir";
   }
