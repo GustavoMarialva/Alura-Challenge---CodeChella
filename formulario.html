@@ -121,7 +121,8 @@
           id="cpf"
           minlength="11"
           maxlength="14"
-          placeholder="Digite seu CPF"
+          placeholder="Digite apenas números"
+          pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
           required
         />
         <label for="aniversario" class="formulario__label"
@@ -153,16 +154,16 @@
           <option value="op2">12/03</option>
         </select>
 
-        <!-- <input
+        <input
           type="submit"
           class="btn__ingresso"
           value="Avançar!"
           id="botao__dados"
-        /> -->
-        <button class="btn__ingresso" type="submit">
+        />
+        <!-- <button class="btn__ingresso" type="submit">
           <a href="#" class="btn__ingresso-link" type="submit">Avançar!</a>
           <img src="./img/setadireita.svg" alt="" />
-        </button>
+        </button> -->
       </form>
     </section>
 

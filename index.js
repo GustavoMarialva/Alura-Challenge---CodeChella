@@ -61,6 +61,8 @@ form.addEventListener("submit", (e) => {
     } else if (element.id == "data") {
       pessoa.data = selecionarIngressoSetor(element.id);
     }
+
+    console.log(pessoa);
   });
 
   pessoa.email = document.getElementById("email").value;

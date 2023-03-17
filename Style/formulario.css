@@ -27,8 +27,18 @@
   text-align: center;
 }
 .btn__ingresso {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   width: 164px;
+  height: 56px;
+  background-image: url(../img/setadireita.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
   align-self: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  gap: 16px;
 }
 
 input,
