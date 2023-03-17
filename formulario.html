@@ -96,63 +96,89 @@
     <section class="formulario">
       <h3 class="formulario__titulo">Preencha o formulário a seguir:</h3>
       <form action="" data-formulario class="formulario__ficha" method="get">
-        <label for="nome" class="formulario__label">Nome Completo:</label>
-        <input
-          type="text"
-          required
-          id="nome"
-          name="nome"
-          minlength="3"
-          placeholder="Digite seu nome"
-        />
+        <fieldset>
+          <label for="nome" class="formulario__label">Nome Completo:</label>
+          <input
+            type="text"
+            required
+            id="nome"
+            name="nome"
+            minlength="3"
+            placeholder="Digite seu nome"
+          />
+          <span class="mensagem-erro"></span>
+        </fieldset>
 
-        <label for="email" class="formulario__label">Email:</label>
-        <input
-          type="email"
-          id="email"
-          required
-          minlength="4"
-          placeholder="Digite seu e-mail"
-        />
-        <label for="cpf" class="formulario__label">CPF</label>
-        <input
-          type="text"
-          name="cpf"
-          id="cpf"
-          minlength="11"
-          maxlength="14"
-          placeholder="Digite apenas números"
-          pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
-          required
-        />
-        <label for="aniversario" class="formulario__label" required
-          >Data de nascimento:</label
-        >
-        <input type="date" required name="aniversario" id="aniversario" />
-        <label for="setor" class="formulario__label">Setor:</label>
-        <select name="setor" id="setor" required>
-          <option value="" disabled selected>Escolha o setor</option>
-          <option value="pista">Pista Premium</option>
-          <option value="pista">Pista Comum</option>
-          <option value="cadeiras">Cadeiras térreo</option>
-          <option value="cadeiras">Cadeiras Superiores</option>
-        </select>
+        <fieldset>
+          <label for="email" class="formulario__label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            minlength="4"
+            placeholder="Digite seu e-mail"
+          />
+          <span class="mensagem-erro"></span>
+        </fieldset>
 
-        <label for="ingresso" class="formulario__label"
-          >Tipo de Ingresso:</label
-        >
-        <select name="ingresso" id="ingresso" required>
-          <option value="" disabled selected>Tipo de ingresso</option>
-          <option value="">Inteira</option>
-          <option value="">Meia entrada/estudante</option>
-          <option value="">Cortesia</option>
-        </select>
-        <label for="data" class="formulario__label">Escolha a data:</label>
-        <select name="data" id="data" required>
-          <option value="" disabled selected>Data do show</option>
-          <option value="op1">11/03</option>
-          <option value="op2">12/03</option>
-        </select>
+        <fieldset>
+          <label for="cpf" class="formulario__label">CPF</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            minlength="11"
+            maxlength="14"
+            placeholder="Digite apenas números"
+            pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+            required
+          />
+          <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="aniversario" class="formulario__label" required
+            >Data de nascimento:</label
+          >
+          <input type="date" required name="aniversario" id="aniversario" />
+          <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="setor" class="formulario__label">Setor:</label>
+          <select name="setor" id="setor" required>
+            <option value="" disabled selected>Escolha o setor</option>
+            <option value="pista">Pista Premium</option>
+            <option value="pista">Pista Comum</option>
+            <option value="cadeiras">Cadeiras térreo</option>
+            <option value="cadeiras">Cadeiras Superiores</option>
+          </select>
+          <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="ingresso" class="formulario__label"
+            >Tipo de Ingresso:</label
+          >
+          <select name="ingresso" id="ingresso" required>
+            <option value="" disabled selected>Tipo de ingresso</option>
+            <option value="">Inteira</option>
+            <option value="">Meia entrada/estudante</option>
+            <option value="">Cortesia</option>
+          </select>
+          <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset>
+          <label for="data" class="formulario__label">Escolha a data:</label>
+          <select name="aniversario" id="data" required>
+            <option value="" disabled selected>Data do show</option>
+            <option value="op1">11/03</option>
+            <option value="op2">12/03</option>
+          </select>
+          <span class="mensagem-erro"></span>
+        </fieldset>
 
         <input
           type="submit"

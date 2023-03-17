@@ -6,9 +6,7 @@ export default function ehUmCPF(campo) {
     validaPrimeiroDigito(cpf) ||
     validaSegundoDigito(cpf)
   ) {
-    console.log("Esse cpf não existe");
-  } else {
-    console.log("Existe");
+    campo.setCustomValidity("Esse cpf não é válido.");
   }
 }
 // A função ehUmCPF foi configurada para ser exportada como padrão, ou seja, quando chamarmos o arquivo valida-cpf esta função será retornada. Criamos também uma função tradicional que receberá o valor de campo com o método replace, que por sua vez recebe dois parâmetros: o primeiro indica o conteúdo que queremos substituir (no caso, os caracteres especiais . e -), enquanto o segundo indica o conteúdo que será utilizado para substituí-lo (no caso, um campo vazio). Através desta função, efetuamos a remoção dos caracteres especiais nos casos de inputs com essa característica, normalizando esses valores e tornando mais fácil a comparação e validação entre os tipos de CPF inseridos.
@@ -69,4 +67,4 @@ function validaSegundoDigito(cpf) {
 
   return soma != cpf[10];
 }
-// A função validaSegundoDigito foi criada com a mesma lógica de sua antecessora. Apenas acrescentamos o primeiro dígito ao cálculo, pois este já terá sido verificado pela função anterior.
+// A função validaSegundoDigito foi criada com a mesma lógica de sua antecessora. Apenas acrescentamos o primeiro dígito ao cálculo, pois este já terá sido verificado pela função anterior
