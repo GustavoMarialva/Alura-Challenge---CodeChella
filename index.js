@@ -48,6 +48,25 @@ window.onclick = (e) => {
 // validações formulário
 
 const camposDoFormulario = document.querySelectorAll("[required]");
+const formulario = document.querySelector("[data-formulario]");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const dadosComprador = {
+    nome: e.target.elements["nome"].value,
+    email: e.target.elements["email"].value,
+    cpf: e.target.elements["cpf"].value,
+    aniversario: e.target.elements["aniversario"].value,
+    setor: e.target.elements["setor"].value,
+    tipoIngresso: e.target.elements["tipoIngresso"].value,
+    dataEvento: e.target.elements["dataEvento"].value,
+  };
+
+  localStorage.setItem("comprador", JSON.stringify(dadosComprador));
+
+  window.location.href = "./ingresso.html";
+});
 
 // Cria evento para quando tirar o foco do input e será o gatilho para ativar o verificaCampo
 camposDoFormulario.forEach((campo) => {

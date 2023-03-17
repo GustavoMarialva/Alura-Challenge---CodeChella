@@ -158,24 +158,27 @@
         </fieldset>
 
         <fieldset>
-          <label for="ingresso" class="formulario__label"
+          <label for="tipoIngresso" class="formulario__label"
             >Tipo de Ingresso:</label
           >
-          <select name="ingresso" id="ingresso" required>
-            <option value="" disabled selected>Tipo de ingresso</option>
-            <option value="">Inteira</option>
-            <option value="">Meia entrada/estudante</option>
-            <option value="">Cortesia</option>
+          <select name="tipoIngresso" id="tipo" required>
+            <option value="" disabled>Tipo de ingresso</option>
+            <option value="Inteira">Inteira</option>
+            <option value="Meia">Meia entrada/estudante</option>
+            <option value="Cortesia">Cortesia</option>
           </select>
           <span class="mensagem-erro"></span>
         </fieldset>
 
         <fieldset>
-          <label for="data" class="formulario__label">Escolha a data:</label>
-          <select name="aniversario" id="data" required>
+          <label for="dataEvento" class="formulario__label"
+            >Escolha a data:</label
+          >
+          <select name="dataEvento" id="dataEvento" required>
             <option value="" disabled selected>Data do show</option>
             <option value="op1">11/03</option>
             <option value="op2">12/03</option>
+            <option value="op3">Passaporte</option>
           </select>
           <span class="mensagem-erro"></span>
         </fieldset>
