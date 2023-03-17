@@ -125,12 +125,12 @@
           pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
           required
         />
-        <label for="aniversario" class="formulario__label"
+        <label for="aniversario" class="formulario__label" required
           >Data de nascimento:</label
         >
         <input type="date" required name="aniversario" id="aniversario" />
         <label for="setor" class="formulario__label">Setor:</label>
-        <select name="setor" id="setor">
+        <select name="setor" id="setor" required>
           <option value="" disabled selected>Escolha o setor</option>
           <option value="pista">Pista Premium</option>
           <option value="pista">Pista Comum</option>
@@ -141,14 +141,14 @@
         <label for="ingresso" class="formulario__label"
           >Tipo de Ingresso:</label
         >
-        <select name="ingresso" id="ingresso">
+        <select name="ingresso" id="ingresso" required>
           <option value="" disabled selected>Tipo de ingresso</option>
           <option value="">Inteira</option>
           <option value="">Meia entrada/estudante</option>
           <option value="">Cortesia</option>
         </select>
         <label for="data" class="formulario__label">Escolha a data:</label>
-        <select name="data" id="data">
+        <select name="data" id="data" required>
           <option value="" disabled selected>Data do show</option>
           <option value="op1">11/03</option>
           <option value="op2">12/03</option>
@@ -208,6 +208,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -44,46 +44,52 @@ window.onclick = (e) => {
 
 // validações formulário
 
-const form = document.querySelector("[data-formulario]");
+const camposDoFormulario = document.querySelector("[required]");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const pessoa = {};
-  const caixaSelecao = document.querySelectorAll("select");
-
-  pessoa.nome = document.getElementById("nome").value;
-  caixaSelecao.forEach((element) => {
-    if (element.id == "setor") {
-      pessoa.setor = selecionarIngressoSetor(element.id);
-    } else if (element.id == "ingresso") {
-      pessoa.zona = selecionarIngressoSetor(element.id);
-    } else if (element.id == "data") {
-      pessoa.data = selecionarIngressoSetor(element.id);
-    }
-
-    console.log(pessoa);
-  });
-
-  pessoa.email = document.getElementById("email").value;
-  pessoa.cpf = document.getElementById("cpf").value;
-  pessoa.aniversario = document.getElementById("aniversario").value;
-
-  localStorage.setItem("comprador", JSON.stringify(pessoa));
-
-  window.location.href = "../ingresso.html";
+// Cria evento para quando tirar o foco do input e será o gatilho para ativar o verificaCampo
+camposDoFormulario.forEach((campo) => {
+  campo.addEventListener("blur", () => verificaCampo(campo));
 });
 
-function selecionarIngressoSetor(id) {
-  const lista = document.querySelector(`#${id}`).querySelectorAll("option");
-  let opcaoSelecionada = "";
+function verificaCampo(campo) {}
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  lista.forEach((element) => {
-    if (element.selected) {
-      opcaoSelecionada = element.textContent;
-    }
-  });
-}
+//   const pessoa = {};
+//   const caixaSelecao = document.querySelectorAll("select");
+
+//   pessoa.nome = document.getElementById("nome").value;
+//   caixaSelecao.forEach((element) => {
+//     if (element.id == "setor") {
+//       pessoa.setor = selecionarIngressoSetor(element.id);
+//     } else if (element.id == "ingresso") {
+//       pessoa.zona = selecionarIngressoSetor(element.id);
+//     } else if (element.id == "data") {
+//       pessoa.data = selecionarIngressoSetor(element.id);
+//     }
+
+//     console.log(pessoa);
+//   });
+
+//   pessoa.email = document.getElementById("email").value;
+//   pessoa.cpf = document.getElementById("cpf").value;
+//   pessoa.aniversario = document.getElementById("aniversario").value;
+
+//   localStorage.setItem("comprador", JSON.stringify(pessoa));
+
+//   window.location.href = "../ingresso.html";
+// });
+
+// function selecionarIngressoSetor(id) {
+//   const lista = document.querySelector(`#${id}`).querySelectorAll("option");
+//   let opcaoSelecionada = "";
+
+//   lista.forEach((element) => {
+//     if (element.selected) {
+//       opcaoSelecionada = element.textContent;
+//     }
+//   });
+// }
 
 // const camposDoFormulario = document.querySelectorAll("[required]");
 // const formulario = document.querySelector("[data-formulario]");
